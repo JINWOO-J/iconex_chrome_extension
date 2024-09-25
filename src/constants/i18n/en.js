@@ -1,3 +1,5 @@
+import {DISMISS_PERIOD_IN_DAYS} from "../../constants"
+
 export default {
   button: {
     confirm: "Confirm",
@@ -688,6 +690,17 @@ export default {
       "6. ICONex supports Korean and English as the official languages. ICON Foundation is not responsible for any loss that comes from mis-translation into other languages than the official languages.",
     copyright:
       "※ All copyrights regarding ICONex is held by ICON Foundation.",
+  },
+
+  exitNotice: {
+    header: 'Critical Update: Action Required!',
+    importantTitle: 'Action Required: ICONex Deprecation',
+    primaryMessage: 'Our browser wallet, ICONex, will no longer be supported. This means that ICONex will stop functioning in Chrome after the deprecation date.',
+    secondaryMessage: 'To ensure that your assets remain safe and accessible, please migrate to Hana Wallet, the official replacement for ICONex.',
+    notSupported: 'ICONex is officially no longer supported. No further updates or fixes will be provided.',
+    tertiaryMessage: 'It is crucial that you back up your wallet and perform the migration as soon as possible to avoid any potential disruptions.',
+    finalReminder: 'Thank you for being part of the ICONex journey. We appreciate your prompt action to transition to Hana Wallet.',
+    dontShowAgain: 'Do not show this message for '+DISMISS_PERIOD_IN_DAYS+' day(s)'
   },
 
   termsOfUse: "Terms of use",

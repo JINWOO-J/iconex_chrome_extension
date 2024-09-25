@@ -54,6 +54,7 @@ import ContractListContainer from './Popup/_26_contractListContainer'
 import ConnectLedgerContainer from './Popup/_27_connectLedgerContainer'
 import ClaimIScoreContainer from './Popup/_30_claimIScoreContainer'
 import StakeContainer from './Popup/_31_stakeContainer'
+import ExitNoticePopupContainer from "./Popup/_32_exitNoticePopupContainer";
 
 import RouteContainer from './Route/RouteContainer'
 import TimerContainer from './TimerContainer'
@@ -117,4 +118,5 @@ export {
   ContractListContainer,
   ClaimIScoreContainer,
   StakeContainer,
+  ExitNoticePopupContainer,
 }

@@ -20,3 +20,12 @@ export function closePopup() {
     type: actionTypes.closePopup,
   };
 }
+
+export const showExitNotice = () => ({
+  type: actionTypes.showExitNotice,
+});
+
+export const closeExitNotice = () => {
+  return {
+    type: actionTypes.closeExitNotice,
+}};

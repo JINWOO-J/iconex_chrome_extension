@@ -151,6 +151,8 @@ import ImmunityPopup from "./Popup/_25_immunityPopup/ImmunityPopup";
 
 import ConnectLedger from "./Popup/_27_connectLedger/ConnectLedger";
 
+import ExitNoticePopup from "./Popup/_32_exitNoticePopup/ExitNoticePopup";
+
 export {
   Notice,
   Header,
@@ -298,4 +300,5 @@ export {
   ChangePasscode1,
   ChangePasscode2,
   NewPasscodeInput,
+  ExitNoticePopup,
 };

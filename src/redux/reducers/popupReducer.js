@@ -3,7 +3,8 @@ import actionTypes from 'redux/actionTypes/actionTypes'
 const initialState = {
   isPopupOn: false,
   popupType: '',
-  popupNum: 1
+  popupNum: 1,
+  exitNoticeVisible: false,
 }
 
 export function popupReducer(state = initialState, action) {
@@ -19,7 +20,18 @@ export function popupReducer(state = initialState, action) {
         popupNum: action.popupNum
       })
     case actionTypes.closePopup:
-      return Object.assign({}, initialState)
+      if (!state.isPopupOn) {
+        return state;
+      }
+      return { ...initialState };
+
+    case actionTypes.showExitNotice:
+      return Object.assign({}, state, {
+        popupType: 'exitNotice',
+        exitNoticeVisible: true,
+      });
+    case actionTypes.closeExitNotice:
+      return Object.assign({}, initialState);
     default:
       return state
   }

@@ -355,3 +355,5 @@ export const erc20Abi = [
     type: "function",
   },
 ];
+
+export const DISMISS_PERIOD_IN_DAYS = 1;

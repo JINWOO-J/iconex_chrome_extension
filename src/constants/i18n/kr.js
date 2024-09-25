@@ -1,3 +1,5 @@
+import {DISMISS_PERIOD_IN_DAYS} from "../../constants"
+
 export default {
   button: {
     confirm: "확인",
@@ -688,6 +690,18 @@ export default {
       "6. ICONex는 한국어와 영어를 기본 언어로 지원합니다. 기본으로 제공하는 언어 외에 다른 언어로 번역 시 이로 인해 의미가 잘못 전달되어 발생한 문제에 대해서는 ICON Foundation에게 책임이 없습니다.",
     copyright:
       "※ ICONex와 관련된 모든 저작권은 ICON Foundation에 있습니다 (Copyright © 2020 ICON Foundation).",
+  },
+
+  exitNotice: {
+    header: '중요 공지: 조치가 필요!',
+    importantTitle: 'ICONex 사용 중단 안내',
+    primaryMessage: 'ICONex 지갑은 곧 더 이상 사용하실 수 없습니다. 중단 이후에는 Chrome에서 ICONex가 작동하지 않으니 주의해 주세요.',
+    secondaryMessage: '자산을 안전하게 유지하려면, 공식 대체 지갑인 Hana Wallet으로 이전해 주세요.',
+    notSupported: 'ICONex는 더 이상 지원되지 않으며, 앞으로는 업데이트나 수정이 제공되지 않습니다.',
+    tertiaryMessage: '지갑을 백업하고 빠른 시일 내에 Hana Wallet으로 이전해 주셔야 불편을 겪지 않으실 수 있습니다.',
+    finalReminder: '그동안 ICONex를 이용해 주셔서 감사합니다. 빠른 시일 내에 Hana Wallet으로 전환해 주시기 바랍니다. ',
+    dontShowAgain: DISMISS_PERIOD_IN_DAYS + '일 동안 이 메시지 다시 보지 않기',
+    linkText: "자세히 보기",
   },
 
   termsOfUse: "이용약관",

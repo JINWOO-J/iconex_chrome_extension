@@ -250,6 +250,10 @@ const actionTypes = {
   getEstimatedTxFeeLoading: 'GET_ESTIMATED_TX_FEE_LOADING',
   getEstimatedTxFeeFulfilled: 'GET_ESTIMATED_TX_FEE_FULFILLED',
   getEstimatedTxFeeRejected: 'GET_ESTIMATED_TX_FEE_REJECTED',
+
+  //
+  showExitNotice: 'SHOW_EXIT_NOTICE',
+  closeExitNotice: 'CLOSE_EXIT_NOTICE',
 };
 
 export default actionTypes;

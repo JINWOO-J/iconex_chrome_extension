@@ -21,6 +21,7 @@ import {
   ConnectLedgerContainer,
   ClaimIScoreContainer,
   StakeContainer,
+  ExitNoticePopupContainer,
 } from 'app/containers/';
 
 class Popup extends Component {
@@ -72,6 +73,10 @@ class Popup extends Component {
 
     if (popupType === 'stake') {
       return 'stake'
+    }
+
+    if (popupType === 'exitNotice') {
+      return 'exit-notice'
     }
 
     return ''
@@ -136,6 +141,8 @@ class Popup extends Component {
           return <ClaimIScoreContainer />
         case 'stake':
           return <StakeContainer />
+        case 'exitNotice':
+          return <ExitNoticePopupContainer />
         default:
           break;
       }
